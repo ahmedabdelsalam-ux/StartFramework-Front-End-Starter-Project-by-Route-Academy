@@ -1,0 +1,20 @@
+.footer-top {
+  background-color: #2c3e50 !important;
+}
+.footer-top .one p {
+  font-size: 20px;
+}
+.footer-top .one .fs-6 {
+  font-size: 14px !important;
+}
+i {
+  border: 1px solid #fff;
+  text-align: center;
+  line-height: 30px;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+.footer-bottom {
+  background-color: #1a252f;
+}

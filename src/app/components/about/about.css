@@ -1,0 +1,24 @@
+.about-section {
+  background-color: #1abc9c;
+  height: 85vh;
+  /* padding: 180px 0 !important; */
+}
+
+.star {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.star i {
+  margin: 0 10px;
+}
+
+.star::before,
+.star::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background-color: white;
+}

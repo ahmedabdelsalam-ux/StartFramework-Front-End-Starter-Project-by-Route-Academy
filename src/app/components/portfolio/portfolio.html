@@ -1,0 +1,47 @@
+<section class="portfolio text-center py-5 ">
+    <h2 class="fw-bold fs-1 pt-3 text-uppercase">
+        portfolio component
+    </h2>
+    <div class="star py-2 ">
+        <span class="line"></span>
+        <i class="fa-solid fa-star"></i>
+        <span class="line"></span>
+    </div>
+
+
+    <div class="container py-4">
+
+        <div class="row g-4">
+
+            @for (image of images; track image.id) {
+            <div class="col-md-4  cursor-pointer">
+                <div class="card position-relative" (click)="showModel()">
+                    <div class="image w-100">
+                        <img class="w-100" [src]="image.image" alt="...">
+                    </div>
+                    <div class="layer text-center d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+
+            </div>
+            }
+
+        </div>
+
+    </div>
+
+    @if (flag===true) {
+    <div class="modal-overlay" (click)="closeModel()">
+        <div class="layer d-flex justify-content-center align-items-center0">
+            <div class="image" (click)="$event.stopPropagation()">
+                <img src="/images/1.png" alt="">
+            </div>
+        </div>
+    </div>
+    }
+
+
+
+
+</section>

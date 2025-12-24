@@ -1,0 +1,40 @@
+<section class="contact py-5">
+    <div class="text-center d-flex flex-wrap justify-content-center align-items-center flex-column">
+        <h2 class="fw-bold fs-1 pt-3 text-uppercase">
+            conatct section
+        </h2>
+        <div class="star py-2 ">
+            <span class="line"></span>
+            <i class="fa-solid fa-star"></i>
+            <span class="line"></span>
+        </div>
+    </div>
+
+    <form action="" class="w-50 mx-auto d-block py-5">
+        <div class="my-3">
+            @if (userName) {
+            <label for="userName" class="">userName:</label>
+            }
+            <input [(ngModel)]="userName" class="d-block w-100  border-0 border-bottom rounded-1 p-1" type="text"
+                placeholder="userName" name="userName" id="userName">
+        </div>
+        <div class="my-3">
+            @if (userAge) {<label for="userAge" class="mt-1">userAge:</label>}
+            <input [(ngModel)]="userAge" class="d-block w-100 my-2 border-0 border-bottom rounded-1 p-1" type="number"
+                placeholder="userAge" name="userAge" id="userAge">
+        </div>
+        <div class="my-3">
+            @if (userEmail) {<label for="userEmail" class="mt-1">userEmail:</label>}
+            <input [(ngModel)]="userEmail" class="d-block w-100 my-2 border-0 border-bottom rounded-1 p-1" type="email"
+                placeholder="userEmail" name="userEmail" id="userEmail">
+        </div>
+        <div class="my-3">
+            @if (userPass) {<label for="userPassword" class="mt-1">userPassword:</label>}
+            <input [(ngModel)]="userPass" class="d-block w-100 my-2 border-0 border-bottom rounded-1 p-1"
+                type="password" placeholder="userPassword" name="userPassword" id="userPassword">
+        </div>
+        <button class="btn btn-success my-3 border-0">
+            send message
+        </button>
+    </form>
+</section>
