@@ -13,23 +13,23 @@
     <form action="" class="w-50 mx-auto d-block py-5">
         <div class="my-3">
             @if (userName) {
-            <label for="userName" class="">userName:</label>
+            <label for="userName" class="animate__animated animate__fadeInUp">userName:</label>
             }
             <input [(ngModel)]="userName" class="d-block w-100  border-0 border-bottom rounded-1 p-1" type="text"
                 placeholder="userName" name="userName" id="userName">
         </div>
         <div class="my-3">
-            @if (userAge) {<label for="userAge" class="mt-1">userAge:</label>}
+            @if (userAge) {<label for="userAge" class="animate__animated animate__fadeInUp">userAge:</label>}
             <input [(ngModel)]="userAge" class="d-block w-100 my-2 border-0 border-bottom rounded-1 p-1" type="number"
                 placeholder="userAge" name="userAge" id="userAge">
         </div>
         <div class="my-3">
-            @if (userEmail) {<label for="userEmail" class="mt-1">userEmail:</label>}
+            @if (userEmail) {<label for="userEmail" class="animate__animated animate__fadeInUp">userEmail:</label>}
             <input [(ngModel)]="userEmail" class="d-block w-100 my-2 border-0 border-bottom rounded-1 p-1" type="email"
                 placeholder="userEmail" name="userEmail" id="userEmail">
         </div>
         <div class="my-3">
-            @if (userPass) {<label for="userPassword" class="mt-1">userPassword:</label>}
+            @if (userPass) {<label for="userPassword" class="animate__animated animate__fadeInUp">userPassword:</label>}
             <input [(ngModel)]="userPass" class="d-block w-100 my-2 border-0 border-bottom rounded-1 p-1"
                 type="password" placeholder="userPassword" name="userPassword" id="userPassword">
         </div>
