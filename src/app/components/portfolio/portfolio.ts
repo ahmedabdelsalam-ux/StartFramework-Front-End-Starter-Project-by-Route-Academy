@@ -35,9 +35,12 @@ export class Portfolio {
     },
   ];
 
+  selectImage: string = '';
+
   flag: boolean = false;
 
-  showModel(): void {
+  showModel(image: string): void {
+    this.selectImage = image;
     this.flag = true;
   }
   closeModel(): void {

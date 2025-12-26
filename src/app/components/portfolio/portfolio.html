@@ -15,7 +15,7 @@
 
             @for (image of images; track image.id) {
             <div class="col-md-4  cursor-pointer">
-                <div class="card position-relative" (click)="showModel()">
+                <div class="card position-relative" (click)="showModel(image.image)">
                     <div class="image w-100">
                         <img class="w-100" [src]="image.image" alt="...">
                     </div>
@@ -35,7 +35,7 @@
     <div class="modal-overlay" (click)="closeModel()">
         <div class="layer d-flex justify-content-center align-items-center0">
             <div class="image animate__animated animate__zoomIn " (click)="$event.stopPropagation()">
-                <img src="/images/1.png" alt="">
+                <img [src]="selectImage" alt="">
             </div>
         </div>
     </div>
